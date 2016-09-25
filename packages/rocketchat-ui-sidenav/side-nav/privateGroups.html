@@ -1,0 +1,21 @@
+<template name="privateGroups">
+	<h3 class="add-room {{isActive}}">
+		Messages via EB
+		{{#if hasPermission 'create-p'}}
+			<i class="icon-plus"></i>
+		{{/if}}
+	</h3>
+	<ul>
+		{{#each rooms}}
+			{{> chatRoomItem }}
+		{{else}}
+			<p class="empty">{{_ "No_direct_messages_yet" }}</p>
+		{{/each}}
+	</ul>
+	
+	
+	{{#if $gt total totalOpen}}
+		<a href="" class="more more-groups">{{_ "More_groups"}} ..</a>
+	{{/if}}
+	
+</template>
