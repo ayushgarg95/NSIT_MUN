@@ -1,0 +1,24 @@
+1. Install Meteor -
+$ curl https://install.meteor.com/ | sh
+
+2. Clone NSIT_MUN repo
+$ git clone https://github.com/ayushgarg95/NSIT_MUN.git
+
+3. Goto folder and run meteor
+
+$ cd NSIT_MUN
+$ meteor
+
+4. Check local IP of your server
+
+$ ifconfig
+
+see the ip address of wlan0/wlan
+
+5. Give out the following IP to everyone:
+
+<Local IP Address>:<Port on which app is running>
+
+Port is usually 3000
+Eg.
+192.168.1.35:3000
